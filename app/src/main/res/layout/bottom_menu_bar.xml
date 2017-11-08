@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_gravity="bottom"
+    android:gravity="center"
+    android:background="@android:color/black">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.39"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:backgroundTint="@android:color/black"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_list_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0.39"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@android:color/background_dark"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_date_range_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_weight="0.02"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0.39"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@android:color/background_dark"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0.39"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@android:color/background_dark"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_account_box_black_24dp" />
+</LinearLayout>
