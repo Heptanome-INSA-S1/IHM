@@ -8,6 +8,6 @@ public class FilterMenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.filter_menu);
+        //setContentView(R.layout.filter_menu);
     }
 }

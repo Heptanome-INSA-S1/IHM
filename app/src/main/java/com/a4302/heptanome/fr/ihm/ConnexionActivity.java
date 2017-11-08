@@ -12,7 +12,7 @@ public class ConnexionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.filter_bar);
+        setContentView(R.layout.menu_filter_bar);
 
         bSignIn = (Button) findViewById(R.id.buttonSignIn);
         bSignIn.setOnClickListener(new View.OnClickListener(){
