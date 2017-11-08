@@ -128,6 +128,4 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.gitignore.io/api/androidstudio
-=======
 .idea/*
->>>>>>> c41a9894b7048c322d56dc07edc396542d46af52
