@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="CustomCard">
+        <attr name="cardName" format="string" />
+        <attr name="cardDescription" format="string" />
+        <attr name="personName" format="string" />
+    </declare-styleable>
+</resources>

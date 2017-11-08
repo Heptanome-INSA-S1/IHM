@@ -18,32 +18,33 @@
             android:layout_marginBottom="10dp">
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/cardImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/textView"
+                android:layout_alignBottom="@+id/cardName"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:contentDescription="@string/card_icone_description"
                 app:srcCompat="@drawable/ic_build_black_24dp" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/cardName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="11dp"
                 android:layout_marginStart="11dp"
-                android:layout_toEndOf="@+id/imageView6"
-                android:layout_toRightOf="@+id/imageView6"
+                android:layout_toEndOf="@+id/cardImage"
+                android:layout_toRightOf="@+id/cardImage"
                 android:text="@string/card_search_title" />
         </RelativeLayout>
 
         <TextView
+            android:id="@+id/cardDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/card_description"
-            android:layout_marginBottom="15dp"/>
+            android:layout_marginBottom="15dp"
+            android:text="@string/card_description" />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -56,7 +57,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/personImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -67,13 +68,13 @@
                 app:srcCompat="@drawable/ic_account_circle_black_24dp" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/personName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageView7"
-                android:layout_alignTop="@+id/imageView7"
-                android:layout_toEndOf="@+id/imageView7"
-                android:layout_toRightOf="@+id/imageView7"
+                android:layout_alignBottom="@+id/personImage"
+                android:layout_alignTop="@+id/personImage"
+                android:layout_toEndOf="@+id/personImage"
+                android:layout_toRightOf="@+id/personImage"
                 android:background="@drawable/rounded_corner_textview"
                 android:ems="6"
                 android:text="@string/user_brice_fullname" />
@@ -82,10 +83,10 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignBottom="@+id/personName"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignTop="@+id/textView3"
+                android:layout_alignTop="@+id/personName"
                 android:layout_marginEnd="55dp"
                 android:layout_marginRight="55dp"
                 android:text="@string/card_mark" />
