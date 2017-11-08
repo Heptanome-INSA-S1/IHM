@@ -10,7 +10,6 @@ import android.widget.EditText;
 public class ConnexionActivity extends AppCompatActivity {
 
     private Button bSignUp;
-    //private Button bSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +20,6 @@ public class ConnexionActivity extends AppCompatActivity {
         bSignUp.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                ConnexionActivity.this.startActivity(new Intent(ConnexionActivity.this,SignUpActivity.class));
-            }
-        });
-        /*
-        bSignIn = (Button) findViewById(R.id.buttonSignIn);
-        bSignIn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
                 Intent intent = new Intent(ConnexionActivity.this,HomePageActivity.class);
                 intent.putExtra("emailLogin",((EditText) findViewById(R.id.editEmail)).getText().toString());
                 startActivity(intent);
@@ -36,6 +27,13 @@ public class ConnexionActivity extends AppCompatActivity {
         });
         */
 
+
+        findViewById(R.id.buttonSignIn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.home_page);
+            }
+        });
 
     }
 
