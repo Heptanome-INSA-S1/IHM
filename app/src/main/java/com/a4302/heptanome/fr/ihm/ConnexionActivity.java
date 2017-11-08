@@ -25,7 +25,6 @@ public class ConnexionActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        */
 
 
         findViewById(R.id.buttonSignIn).setOnClickListener(new View.OnClickListener() {
