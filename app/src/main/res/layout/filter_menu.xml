@@ -2,34 +2,192 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginLeft="32dp"
-    android:layout_marginTop="32dp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context="com.a4302.heptanome.fr.ihm.FilterMenuActivity"
-    android:layout_marginStart="32dp">
+    android:layout_marginLeft="32dp"
+    android:layout_marginTop="64dp"
+    android:layout_marginRight="32dp"
+    android:layout_marginBottom="32dp"
+    android:orientation="vertical">
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton6"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_weight="1"
-        android:clickable="true"
-        android:layout_marginRight="32dp"
-        android:tint="@color/colorFifth"
-        app:backgroundTint="@color/colorFlatPeterRiver"
-        app:srcCompat="@drawable/ic_music_note_black_24dp"
-        android:focusable="true"
-        android:layout_marginEnd="32dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton7"
-        android:layout_width="87dp"
-        android:layout_height="70dp"
-        android:layout_weight="1"
-        android:clickable="true"
-        android:tint="@color/colorFifth"
-        app:backgroundTint="@color/colorFlatPeterRiver"
-        app:srcCompat="@drawable/ic_school_black_24dp" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_music_note_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginEnd="70dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_school_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_info_outline_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_fitness_center_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_directions_car_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_directions_bike_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_build_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_color_lens_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_local_bar_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton10"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_pets_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton11"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_archive_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton12"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@color/colorFifth"
+            app:backgroundTint="@color/colorFlatPeterRiver"
+            app:srcCompat="@drawable/ic_local_laundry_service_black_24dp" />
+    </LinearLayout>
+
 </LinearLayout>
