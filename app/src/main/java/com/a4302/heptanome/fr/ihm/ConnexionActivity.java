@@ -14,7 +14,7 @@ public class ConnexionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu_filter_bar);
+        setContentView(R.layout.activity_connexion);
 
         bSignUp = (Button) findViewById(R.id.buttonSignUp);
         bSignUp.setOnClickListener(new View.OnClickListener(){
