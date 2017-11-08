@@ -1,28 +1,25 @@
 package com.a4302.heptanome.fr.ihm;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ConnexionActivity extends AppCompatActivity {
+public class SignInActivity extends AppCompatActivity {
 
-    private Button bSignIn;
+    private Button bCancel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_connexion);
+        setContentView(R.layout.activity_sign_in);
 
-        bSignIn = (Button) findViewById(R.id.buttonSignIn);
-        bSignIn.setOnClickListener(new View.OnClickListener(){
+        bCancel = (Button) findViewById(R.id.buttonCancel);
+        bCancel.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_sign_in);
+                setContentView(R.layout.activity_connexion);
             }
         });
-
-
     }
-
 }
