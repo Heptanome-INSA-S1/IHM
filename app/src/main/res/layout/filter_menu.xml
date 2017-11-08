@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.a4302.heptanome.fr.ihm.FilterMenuActivity">
+
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/musicCoursesFloatingActionButton"
+        android:id="@+id/floatingActionButton6"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:layout_weight="1"
         android:clickable="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:tint="@color/colorFifth"
+        app:backgroundTint="@color/colorFlatPeterRiver"
+        app:srcCompat="@drawable/ic_music_note_black_24dp"
+        android:focusable="true"
+        android:layout_marginEnd="32dp" />
         android:tint="@android:color/white"
         app:srcCompat="@drawable/ic_music_note_black_24dp" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/teachingLessonsfloatingActionButton2"
-        android:layout_width="70dp"
+        android:id="@+id/floatingActionButton7"
+        android:layout_width="87dp"
         android:layout_height="70dp"
         android:layout_marginTop="36dp"
         android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_weight="1"
         android:clickable="true"
         android:tint="@android:color/background_light"
+        android:tint="@color/colorFifth"
+        app:backgroundTint="@color/colorFlatPeterRiver"
         app:srcCompat="@drawable/ic_school_black_24dp" />
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton3"
@@ -38,3 +47,4 @@
         android:tint="@android:color/background_light"
         app:srcCompat="@drawable/ic_info_outline_black_24dp" />
 </android.support.constraint.ConstraintLayout>
+</GridLayout>
