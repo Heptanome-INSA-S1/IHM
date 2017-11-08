@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/menu_filter_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/fomationButton"
+            android:layout_width="10dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_menu_filter_bar"
+            android:backgroundTint="@color/colorFlatPeterRiver"
+            android:tint="@color/colorFifth"
+            app:srcCompat="@drawable/ic_school_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/materialButton"
+            android:layout_width="10dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_menu_filter_bar"
+            android:backgroundTint="@color/colorFlatOrange"
+            android:radius="10dp"
+            android:tint="@color/colorFifth"
+            app:srcCompat="@drawable/ic_build_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/domicilButton"
+            android:layout_width="10dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_menu_filter_bar"
+            android:backgroundTint="@color/colorFlatAmethyst"
+            android:radius="10dp"
+            android:tint="@color/colorFifth"
+            app:srcCompat="@drawable/ic_domain_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/socialButton"
+            android:layout_width="10dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_menu_filter_bar"
+            android:backgroundTint="@color/colorFlatEmerald"
+            android:radius="10dp"
+            android:tint="@color/colorFifth"
+            app:srcCompat="@drawable/ic_group_black_24dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

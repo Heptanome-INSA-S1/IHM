@@ -9,4 +9,7 @@
     <color name="white">#FFFFFF</color>
     <color name="grey400">#78909C</color>
     <color name="grey700">#455A64</color>
+    <color name="colorFlatOrange">#f39c12</color>
+    <color name="colorFlatAmethyst">#9b59b6</color>
+    <color name="colorFlatEmerald">#2ecc71</color>
 </resources>
