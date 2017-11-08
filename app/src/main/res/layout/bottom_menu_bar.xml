@@ -5,70 +5,63 @@
     android:layout_height="56dp"
     android:layout_gravity="bottom"
     android:gravity="center"
-    android:background="@android:color/black">
+    android:background="@color/colorPrimaryDark">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+    <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.39"
-        android:clickable="true"
-        android:tint="@android:color/white"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        app:backgroundTint="@android:color/black"
-        app:fabSize="mini"
+        android:layout_weight="0.39"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:tint="@android:color/white"
         app:srcCompat="@drawable/ic_list_black_24dp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
+    <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="0.39"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:tint="@android:color/white"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_weight="0.39"
-        android:clickable="true"
-        android:tint="@android:color/white"
-        app:backgroundTint="@android:color/background_dark"
-        app:fabSize="mini"
         app:srcCompat="@drawable/ic_date_range_black_24dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_weight="0.02"
         android:clickable="true"
         android:tint="@android:color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        app:backgroundTint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/colorSecondary"
         app:fabSize="mini"
         app:srcCompat="@drawable/ic_add_black_24dp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
+    <ImageButton
+        android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="0.39"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:tint="@android:color/white"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_weight="0.39"
-        android:clickable="true"
-        android:tint="@android:color/white"
-        app:backgroundTint="@android:color/background_dark"
-        app:fabSize="mini"
         app:srcCompat="@drawable/ic_notifications_black_24dp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton5"
+    <ImageButton
+        android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="0.39"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:tint="@android:color/white"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_weight="0.39"
-        android:clickable="true"
-        android:tint="@android:color/white"
-        app:backgroundTint="@android:color/background_dark"
-        app:fabSize="mini"
         app:srcCompat="@drawable/ic_account_box_black_24dp" />
+
 </LinearLayout>
