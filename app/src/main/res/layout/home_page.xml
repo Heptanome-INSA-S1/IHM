@@ -1,33 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorAccent"
     tools:context="com.a4302.heptanome.fr.ihm.HomePageActivity">
 
-    <include layout="@layout/search_menu"/>
+    <include layout="@layout/search_menu"
+        android:id="@+id/search_menu"/>
 
-    <FrameLayout
-        android:id="@+id/content"
+    <include layout="@layout/menu_filter_bar"
+        android:id="@+id/menu_filter_bar"
+        android:layout_below="@+id/search_menu"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <TextView
-            android:id="@+id/message"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_filter_bar">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="@string/title_home" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+                <include layout="@layout/card"/>
+            <include layout="@layout/card"/>
+            <include layout="@layout/card"/>
+            <include layout="@layout/card"/>
 
-    </FrameLayout>
 
-    <include layout="@layout/bottom_menu_bar"/>
+        </LinearLayout>
+    </ScrollView>
 
-</LinearLayout>
+
+    <include layout="@layout/bottom_menu_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
