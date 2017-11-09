@@ -24,7 +24,7 @@
         android:layout_below="@+id/menu_filter_bar">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
                 <include layout="@layout/card"/>
 
@@ -37,9 +37,68 @@
 
         </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        android:id="@+id/choose_purpose_or_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_above="@+id/bottom_menu_bar"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/purpose_request_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorFifth"
+            android:text="Propose a service"
+            android:textColor="@color/colorSecondary"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
 
+        <TextView
+            android:id="@+id/request_request_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorFifth"
+            android:text="Request a service"
+            android:textColor="@color/colorSecondary"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/cancel_request_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorFifth"
+            android:text="Cancel"
+            android:textColor="#bf1111"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
 
     <include layout="@layout/bottom_menu_bar"
+        android:id="@+id/bottom_menu_bar"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
