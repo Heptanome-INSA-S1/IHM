@@ -10,19 +10,15 @@ import android.widget.EditText;
 
 public class ConnexionActivity extends AppCompatActivity {
 
-    private Button bSignUp;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connexion);
 
-        bSignUp = (Button) findViewById(R.id.buttonSignUp);
-        bSignUp.setOnClickListener(new View.OnClickListener(){
+        findViewById(R.id.buttonSignUp).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ConnexionActivity.this,HomePageActivity.class);
-                intent.putExtra("emailLogin",((EditText) findViewById(R.id.editEmail)).getText().toString());
+                Intent intent = new Intent(ConnexionActivity.this,SignUpActivity.class);
                 startActivity(intent);
             }
         });
@@ -31,10 +27,11 @@ public class ConnexionActivity extends AppCompatActivity {
         findViewById(R.id.buttonSignIn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.home_page);
+                Intent intent = new Intent(ConnexionActivity.this,HomePageActivity.class);
+                intent.putExtra("emailLogin",((EditText) findViewById(R.id.editTextEmail)).getText().toString());
+                startActivity(intent);
             }
         });
-
     }
 
 }

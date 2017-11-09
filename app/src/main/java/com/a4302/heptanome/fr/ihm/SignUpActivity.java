@@ -9,24 +9,19 @@ import android.widget.EditText;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private Button bCancel;
-    //private Button bSignUp;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        bCancel = (Button) findViewById(R.id.buttonCancel);
-        bCancel.setOnClickListener(new View.OnClickListener(){
+        findViewById(R.id.buttonCancel).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SignUpActivity.this,ConnexionActivity.class));
             }
         });
-        /*
-        bSignUp = (Button) findViewById(R.id.buttonSignUpConfirm);
-        bSignUp.setOnClickListener(new View.OnClickListener(){
+
+        findViewById(R.id.buttonSignUpConfirm).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SignUpActivity.this,HomePageActivity.class);
@@ -34,6 +29,5 @@ public class SignUpActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        */
     }
 }

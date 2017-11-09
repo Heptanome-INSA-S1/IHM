@@ -18,9 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity">
-        </activity>
-        <activity android:name=".FilterMenuActivity"></activity>
+        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".HomePageActivity"/>
+        <activity android:name=".FilterMenuActivity"/>
     </application>
 
 </manifest>
