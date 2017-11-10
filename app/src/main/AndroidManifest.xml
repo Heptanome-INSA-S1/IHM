@@ -22,7 +22,8 @@
         <activity android:name=".HomePageActivity" />
         <activity android:name=".FilterMenuActivity" />
         <activity android:name=".ChooseService" />
-        <activity android:name=".ProposeToolsSharingActivity"/>
+        <activity android:name=".ProposeToolsSharingActivity" />
+        <activity android:name=".NotifPageActivity"></activity>
     </application>
 
 </manifest>

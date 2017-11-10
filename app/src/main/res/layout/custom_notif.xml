@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dip"
+    android:background="@color/colorFifth"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/request_or_proposal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Request or Proposal" />
+
+            <ImageView
+                android:id="@+id/person_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/person_name"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/person_image"
+                android:layout_alignTop="@+id/person_image"
+                android:background="@drawable/rounded_corner_textview"
+                android:ems="6"
+                android:text="@string/user_brice_fullname" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp">
+                <ImageView
+                    android:id="@+id/dateImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/personName"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_date_range_black_24dp" />
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="../../...." />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/notif_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:text="Description, du blabla" />
+        <LinearLayout
+            android:id="@+id/layout_for_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/buttonContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Contact"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_for_propose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/buttonAccept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Accept"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/buttonRefuse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Refuse"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -8,7 +8,7 @@
     android:background="@color/colorPrimaryDark">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/buttonList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/ic_list_black_24dp" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/buttonCalendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.39"
@@ -43,7 +43,7 @@
         app:srcCompat="@drawable/ic_add_black_24dp" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/buttonNotification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.39"
@@ -54,7 +54,7 @@
         app:srcCompat="@drawable/ic_notifications_black_24dp" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/buttonProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.39"
