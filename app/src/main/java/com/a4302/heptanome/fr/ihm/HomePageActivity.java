@@ -1,9 +1,11 @@
 package com.a4302.heptanome.fr.ihm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 
 /**
@@ -18,7 +20,7 @@ public class HomePageActivity extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         setContentView(R.layout.home_page);
 
-        ChooseProposeOrRequest =(LinearLayout)findViewById(R.id.choose_purpose_or_request);
+        ChooseProposeOrRequest =(LinearLayout)findViewById(R.id.choose_propose_or_request);
         findViewById(R.id.floatingActionButton).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -35,6 +37,25 @@ public class HomePageActivity extends AppCompatActivity {
                    ChooseProposeOrRequest.setVisibility(View.GONE);
                }
            }
+        );
+
+        findViewById(R.id.propose_request_button).setOnClickListener(new View.OnClickListener() {
+                 @Override
+                 public void onClick(View view) {
+                     Intent intent = new Intent(HomePageActivity.this,ChooseService.class);
+                     intent.putExtra("request_or_propose","Propose");
+                     startActivity(intent);
+                 }
+             }
+        );
+        findViewById(R.id.request_request_button).setOnClickListener(new View.OnClickListener() {
+                 @Override
+                 public void onClick(View view) {
+                     Intent intent = new Intent(HomePageActivity.this,ChooseService.class);
+                     intent.putExtra("request_or_propose","Request");
+                     startActivity(intent);
+                 }
+             }
         );
     }
 
