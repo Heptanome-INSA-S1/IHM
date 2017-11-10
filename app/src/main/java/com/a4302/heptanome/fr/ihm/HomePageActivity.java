@@ -57,6 +57,11 @@ public class HomePageActivity extends AppCompatActivity {
                  }
              }
         );
+        LinearLayout layout = (LinearLayout)findViewById(R.id.layout_for_cards);
+        CustomCard card = new CustomCard(this,"Besoin info","Cherche info sur les lapins","Bug Bunny");
+        layout.addView(card);
+        CustomCard card2 = new CustomCard(this,"Besoin d'un fusil","Pour tuer Bug Bunny","Elmer Fudd");
+        layout.addView(card2);
     }
 
 }

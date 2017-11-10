@@ -23,15 +23,10 @@
         android:layout_below="@+id/menu_filter_bar">
         <LinearLayout
             android:id="@+id/layout_for_cards"
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="vertical">
-
-            <include layout="@layout/card"/>
-
-            <include layout="@layout/card"/>
-
-            <include layout="@layout/card"/>
 
         </LinearLayout>
     </ScrollView>

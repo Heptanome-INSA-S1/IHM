@@ -28,6 +28,14 @@ public class CustomCard extends LinearLayout {
         init(context);
     }
 
+    public CustomCard(Context context, String cardName, String cardDescription, String personName) {
+        super(context);
+        init(context);
+        this.setCardName(cardName);
+        this.setCardDescription(cardDescription);
+        this.setPersonName(personName);
+    }
+
     public CustomCard(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context,attrs);
@@ -112,4 +120,6 @@ public class CustomCard extends LinearLayout {
     }
 
     //TODO : parameterized cardImage and personImage
+
+
 }
