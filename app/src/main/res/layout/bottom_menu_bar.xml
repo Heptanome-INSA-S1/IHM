@@ -1,67 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="56dp"
-    android:layout_gravity="bottom"
-    android:gravity="center"
+    android:layout_height="wrap_content"
     android:background="@color/colorPrimaryDark">
-
-    <ImageButton
-        android:id="@+id/buttonList"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/choose_propose_or_request"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_weight="0.39"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:tint="@android:color/white"
-        app:srcCompat="@drawable/ic_list_black_24dp" />
+        android:background="@color/colorAccent"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/propose_request_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorFifth"
+            android:text="Propose a service"
+            android:textColor="@color/colorSecondary"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
 
-    <ImageButton
-        android:id="@+id/buttonCalendar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.39"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:tint="@android:color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        app:srcCompat="@drawable/ic_date_range_black_24dp" />
+        <TextView
+            android:id="@+id/request_request_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorFifth"
+            android:text="Request a service"
+            android:textColor="@color/colorSecondary"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/cancel_request_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorFifth"
+            android:text="Cancel"
+            android:textColor="#bf1111"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout_bottom_menu_bar"
+        android:layout_height="56dp"
+        android:layout_below="@id/choose_propose_or_request"
+        android:layout_width="match_parent">
+        <ImageButton
+            android:id="@+id/buttonList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.39"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_list_black_24dp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="55dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_weight="0.02"
-        android:clickable="true"
-        android:tint="@android:color/white"
-        app:backgroundTint="@color/colorSecondary"
-        app:fabSize="mini"
-        app:srcCompat="@drawable/ic_add_black_24dp" />
+        <ImageButton
+            android:id="@+id/buttonCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.39"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:tint="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/ic_date_range_black_24dp" />
 
-    <ImageButton
-        android:id="@+id/buttonNotification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.39"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:tint="@android:color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        app:srcCompat="@drawable/ic_notifications_black_24dp" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.02"
+            android:clickable="true"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorSecondary"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
 
-    <ImageButton
-        android:id="@+id/buttonProfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.39"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:tint="@android:color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        app:srcCompat="@drawable/ic_account_box_black_24dp" />
+        <ImageButton
+            android:id="@+id/buttonNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.39"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:tint="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/ic_notifications_black_24dp" />
 
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/buttonProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.39"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:tint="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/ic_account_box_black_24dp" />
+    </LinearLayout>
+
+</RelativeLayout>
