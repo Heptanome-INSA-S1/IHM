@@ -65,6 +65,14 @@ public class HomePageActivity extends AppCompatActivity {
             }
             }
         );
+        findViewById(R.id.buttonProfil).setOnClickListener(new View.OnClickListener() {
+                                                                     @Override
+                                                                     public void onClick(View view) {
+                 Intent intent = new Intent(HomePageActivity.this,ProfilActivity.class);
+                 startActivity(intent);
+             }
+         }
+        );
         LinearLayout layout = (LinearLayout)findViewById(R.id.layout_for_cards);
         CustomCard card = new CustomCard(this,"Besoin info","Cherche info sur les lapins","Bug Bunny");
         CustomCard card2 = new CustomCard(this,"Besoin d'un fusil","Pour tuer Bug Bunny","Elmer Fudd");

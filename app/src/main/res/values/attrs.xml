@@ -4,4 +4,10 @@
         <attr name="cardDescription" format="string" />
         <attr name="personName" format="string" />
     </declare-styleable>
+    <declare-styleable name="CustomNotif">
+        <attr name="request_or_proposal" format="string" />
+        <attr name="description" format="string" />
+        <attr name="person_name" format="string" />
+        <attr name="date" format="string" />
+    </declare-styleable>
 </resources>
