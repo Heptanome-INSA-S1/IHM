@@ -13,88 +13,91 @@ import android.widget.LinearLayout;
  */
 
 public class HomePageActivity extends AppCompatActivity {
-    private LinearLayout ChooseProposeOrRequest;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         setContentView(R.layout.home_page);
 
-        ChooseProposeOrRequest =(LinearLayout)findViewById(R.id.choose_propose_or_request);
-        findViewById(R.id.floatingActionButton).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if(ChooseProposeOrRequest.getVisibility()==View.VISIBLE)
-                        ChooseProposeOrRequest.setVisibility(View.GONE);
-                    else
-                        ChooseProposeOrRequest.setVisibility(View.VISIBLE);
-                }
-            }
-        );
-        findViewById(R.id.cancel_request_button).setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View view) {
-                   ChooseProposeOrRequest.setVisibility(View.GONE);
-               }
-           }
-        );
-
-        findViewById(R.id.propose_request_button).setOnClickListener(new View.OnClickListener() {
-                 @Override
-                 public void onClick(View view) {
-                     Intent intent = new Intent(HomePageActivity.this,ChooseService.class);
-                     intent.putExtra("request_or_propose","Propose");
-                     startActivity(intent);
-                 }
-             }
-        );
-        findViewById(R.id.request_request_button).setOnClickListener(new View.OnClickListener() {
-                 @Override
-                 public void onClick(View view) {
-                     Intent intent = new Intent(HomePageActivity.this,ChooseService.class);
-                     intent.putExtra("request_or_propose","Request");
-                     startActivity(intent);
-                 }
-             }
-        );
-        findViewById(R.id.buttonNotification).setOnClickListener(new View.OnClickListener() {
-                                                                         @Override
-                                                                         public void onClick(View view) {
-                Intent intent = new Intent(HomePageActivity.this,NotifPageActivity.class);
-                startActivity(intent);
-            }
-            }
-        );
-        findViewById(R.id.buttonProfil).setOnClickListener(new View.OnClickListener() {
-                                                                     @Override
-                                                                     public void onClick(View view) {
-                 Intent intent = new Intent(HomePageActivity.this,ProfilActivity.class);
-                 startActivity(intent);
-             }
-         }
-        );
-
-        findViewById(R.id.buttonList).setOnClickListener(new View.OnClickListener() {
-                                                               @Override
-                                                               public void onClick(View view) {
-                               Intent intent = new Intent(HomePageActivity.this,HomePageActivity.class);
-                               startActivity(intent);
-                           }
-                       }
-        );
-        findViewById(R.id.buttonCalendar).setOnClickListener(new View.OnClickListener() {
-                                                             @Override
-                                                             public void onClick(View view) {
-                     Intent intent = new Intent(HomePageActivity.this,CalendarActivity.class);
-                     startActivity(intent);
-                 }
-             }
-        );
+        createListenerBottomMenu(this);
         LinearLayout layout = (LinearLayout)findViewById(R.id.layout_for_cards);
         CustomCard card = new CustomCard(this,"Besoin info","Cherche info sur les lapins","Bug Bunny");
         CustomCard card2 = new CustomCard(this,"Besoin d'un fusil","Pour tuer Bug Bunny","Elmer Fudd");
         layout.addView(card);
         layout.addView(card2);
+    }
+
+    public static void createListenerBottomMenu(final AppCompatActivity activity){
+        final LinearLayout ChooseProposeOrRequest =(LinearLayout)activity.findViewById(R.id.choose_propose_or_request);
+        activity.findViewById(R.id.floatingActionButton).setOnClickListener(new View.OnClickListener() {
+                                                                       @Override
+                                                                       public void onClick(View view) {
+                                                                           if(ChooseProposeOrRequest.getVisibility()==View.VISIBLE)
+                                                                               ChooseProposeOrRequest.setVisibility(View.GONE);
+                                                                           else
+                                                                               ChooseProposeOrRequest.setVisibility(View.VISIBLE);
+                                                                       }
+                                                                   }
+        );
+        activity.findViewById(R.id.cancel_request_button).setOnClickListener(new View.OnClickListener() {
+                                                                        @Override
+                                                                        public void onClick(View view) {
+                                                                            ChooseProposeOrRequest.setVisibility(View.GONE);
+                                                                        }
+                                                                    }
+        );
+
+        activity.findViewById(R.id.propose_request_button).setOnClickListener(new View.OnClickListener() {
+                                                                         @Override
+                                                                         public void onClick(View view) {
+                                                                             Intent intent = new Intent(activity,ChooseService.class);
+                                                                             intent.putExtra("request_or_propose","Propose");
+                                                                             activity.startActivity(intent);
+                                                                         }
+                                                                     }
+        );
+        activity.findViewById(R.id.request_request_button).setOnClickListener(new View.OnClickListener() {
+                                                                         @Override
+                                                                         public void onClick(View view) {
+                                                                             Intent intent = new Intent(activity,ChooseService.class);
+                                                                             intent.putExtra("request_or_propose","Request");
+                                                                             activity.startActivity(intent);
+                                                                         }
+                                                                     }
+        );
+        activity.findViewById(R.id.buttonNotification).setOnClickListener(new View.OnClickListener() {
+                                                                     @Override
+                                                                     public void onClick(View view) {
+                                                                         Intent intent = new Intent(activity,NotifPageActivity.class);
+                                                                         activity.startActivity(intent);
+                                                                     }
+                                                                 }
+        );
+        activity.findViewById(R.id.buttonProfil).setOnClickListener(new View.OnClickListener() {
+                                                               @Override
+                                                               public void onClick(View view) {
+                                                                   Intent intent = new Intent(activity,ProfilActivity.class);
+                                                                   activity.startActivity(intent);
+                                                               }
+                                                           }
+        );
+
+        activity.findViewById(R.id.buttonList).setOnClickListener(new View.OnClickListener() {
+                                                             @Override
+                                                             public void onClick(View view) {
+                                                                 Intent intent = new Intent(activity,HomePageActivity.class);
+                                                                 activity.startActivity(intent);
+                                                             }
+                                                         }
+        );
+        activity.findViewById(R.id.buttonCalendar).setOnClickListener(new View.OnClickListener() {
+                                                                 @Override
+                                                                 public void onClick(View view) {
+                                                                     Intent intent = new Intent(activity,CalendarActivity.class);
+                                                                     activity.startActivity(intent);
+                                                                 }
+                                                             }
+        );
     }
 
 }

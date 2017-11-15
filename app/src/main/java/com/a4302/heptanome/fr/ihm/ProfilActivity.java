@@ -11,7 +11,7 @@ public class ProfilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
-
+        HomePageActivity.createListenerBottomMenu(this);
         findViewById(R.id.buttonModifyProfil).setOnClickListener(new View.OnClickListener() {
                                                                @Override
                                                                public void onClick(View view) {

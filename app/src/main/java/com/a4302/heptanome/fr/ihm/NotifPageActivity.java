@@ -15,6 +15,8 @@ public class NotifPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notif_page);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+        HomePageActivity.createListenerBottomMenu(this);
+
         LinearLayout layout = (LinearLayout)findViewById(R.id.layout_for_notifs);
         CustomNotif notif1 = new CustomNotif(this,"Request","Tim","10/11/2017","Je sais pas quoi écrire");
         CustomNotif notif2 = new CustomNotif(this,"Propose","Tim","10/11/2017","Je sais pas quoi écrire de nouveau");

@@ -13,6 +13,8 @@ public class ChooseService extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_service);
+        HomePageActivity.createListenerBottomMenu(this);
+
         Intent intent = getIntent();
         String ProposeOrRequest = intent.getStringExtra("request_or_propose")+ " a service";
         ((TextView)findViewById(R.id.propose_or_request_text)).setText(ProposeOrRequest);

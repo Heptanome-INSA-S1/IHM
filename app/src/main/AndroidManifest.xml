@@ -25,7 +25,7 @@
         <activity android:name=".ProposeToolsSharingActivity" />
         <activity android:name=".NotifPageActivity" />
         <activity android:name=".ProfilActivity" />
-        <activity android:name=".CalendarActivity"></activity>
+        <activity android:name=".CalendarActivity" />
     </application>
 
 </manifest>
