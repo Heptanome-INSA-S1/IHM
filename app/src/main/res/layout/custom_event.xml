@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dip"
+    android:background="@color/colorFifth"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/state"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFlatOrange"
+        android:text="TASK: TODO"/>
+    <LinearLayout
+        android:layout_below="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/layoutEventCard"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="90sp">
+            <LinearLayout
+                android:id="@+id/layoutInfos"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Piano Lesson" />
+                <TextView
+                    android:id="@+id/dateAndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17h00" />
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="At : INSA Lyon" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/layoutInfos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/userMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="5"/>
+
+                <ImageView
+                    android:id="@+id/imageButton"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@+id/userMoney"
+                    android:layout_toEndOf="@+id/userMoney"
+                    android:layout_toRightOf="@+id/userMoney"
+                    android:adjustViewBounds="true"
+                    android:background="@color/black"
+                    android:tint="@color/colorFifth"
+                    app:srcCompat="@drawable/ic_local_play_black_24dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_toRightOf="@+id/layoutEventCard"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/personImage"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+            <ImageView
+                android:id="@+id/personImage2"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+            <ImageView
+                android:id="@+id/personImage3"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
