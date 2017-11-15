@@ -10,4 +10,11 @@
         <attr name="person_name" format="string" />
         <attr name="date" format="string" />
     </declare-styleable>
+    <declare-styleable name="CustomEvent">
+        <attr name="title" format="string" />
+        <attr name="dateAndTime" format="string" />
+        <attr name="location" format="string" />
+        <attr name="state" format="string" />
+        <attr name="userMoney" format="string" />
+    </declare-styleable>
 </resources>
