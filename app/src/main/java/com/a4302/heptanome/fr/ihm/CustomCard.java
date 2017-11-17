@@ -28,12 +28,13 @@ public class CustomCard extends LinearLayout {
         init(context);
     }
 
-    public CustomCard(Context context, String cardName, String cardDescription, String personName) {
+    public CustomCard(Context context, String cardName, String cardDescription, String personName, CardType type) {
         super(context);
         init(context);
         this.setCardName(cardName);
         this.setCardDescription(cardDescription);
         this.setPersonName(personName);
+        this.setCardType(type, context);
     }
 
     public CustomCard(Context context, AttributeSet attrs) {
@@ -118,8 +119,37 @@ public class CustomCard extends LinearLayout {
     public void setPersonName(String PersonName){
         this.personName.setText(PersonName);
     }
+    public void setCardType(CardType image, Context context){
+        this.cardImage.setImageResource(getResources().getIdentifier(image.toString(),"drawable", context.getPackageName()));
+    }
 
+    public enum CardType{
+        MUSIC("ic_music_note_black_24dp"),
+        SCHOOL("ic_school_black_24dp"),
+        INFOS("ic_info_outline_black_24dp"),
+        SPORT("ic_fitness_center_black_24dp"),
+        CAR("ic_directions_car_black_24dp"),
+        BYCYCLES("ic_directions_bike_black_24dp"),
+        TOOLS("ic_build_black_24dp"),
+        PALETTE("ic_color_lens_black_24dp"),
+        DRINK("ic_local_bar_black_24dp"),
+        PET("ic_pets_black_24dp"),
+        REMOVAL("ic_archive_black_24dp"),
+        CLEANING("ic_local_laundry_service_black_24dp")
+        ;
+
+        private final String text;
+
+        CardType(final String text) {
+            this.text = text;
+        }
+
+        @Override
+        public String toString() {
+            return text;
+        }
+    }
     //TODO : parameterized cardImage and personImage
-
-
 }
+
+
