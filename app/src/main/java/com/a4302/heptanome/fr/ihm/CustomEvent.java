@@ -22,13 +22,14 @@ public class CustomEvent extends LinearLayout {
     TextView dateAndTime;
     TextView location;
     TextView userMoney;
+    ImageView eventImage;
 
     public CustomEvent(Context context) {
         super(context);
         init(context);
     }
 
-    public CustomEvent(Context context, String state, String title, String dateAndTime, String location, String userMoney) {
+    public CustomEvent(Context context, CustomCard.CardType cardType, String state, String title, String dateAndTime, String location, String userMoney) {
         super(context);
         init(context);
         this.setState(state);
@@ -36,6 +37,7 @@ public class CustomEvent extends LinearLayout {
         this.setLocation(location);
         this.setTitle(title);
         this.setUserMoney(userMoney);
+        this.setEventType(cardType,context);
     }
 
     public CustomEvent(Context context, AttributeSet attrs) {
@@ -56,7 +58,7 @@ public class CustomEvent extends LinearLayout {
         location = (TextView) findViewById(R.id.location);
         title = (TextView) findViewById(R.id.title);
         userMoney = (TextView) findViewById(R.id.userMoney);
-
+        eventImage = (ImageView) findViewById(R.id.eventImage);
         //BEGIN SWIPE LISTENENR
         //we will set here a listener who will allow the user to swipe left or swipe right
         //
@@ -73,6 +75,7 @@ public class CustomEvent extends LinearLayout {
         location = (TextView) findViewById(R.id.location);
         title = (TextView) findViewById(R.id.title);
         userMoney = (TextView) findViewById(R.id.userMoney);
+        eventImage = (ImageView) findViewById(R.id.eventImage);
 
         //BEGIN SWIPE LISTENENR
         //we will set here a listener who will allow the user to swipe left or swipe right
@@ -139,6 +142,10 @@ public class CustomEvent extends LinearLayout {
         }
         this.state.setBackgroundColor(Color.parseColor(color));
     }
+    public void setEventType(CustomCard.CardType image, Context context){
+        this.eventImage.setImageResource(getResources().getIdentifier(image.toString(),"drawable", context.getPackageName()));
+    }
+
 
     public void setDateAndTime(String dateAndTime){
         this.dateAndTime.setText(dateAndTime);

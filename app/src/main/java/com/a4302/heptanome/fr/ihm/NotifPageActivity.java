@@ -18,8 +18,8 @@ public class NotifPageActivity extends AppCompatActivity {
         HomePageActivity.createListenerBottomMenu(this);
 
         LinearLayout layout = (LinearLayout)findViewById(R.id.layout_for_notifs);
-        CustomNotif notif1 = new CustomNotif(this,"Request","Tim","10/11/2017","Je sais pas quoi écrire");
-        CustomNotif notif2 = new CustomNotif(this,"Propose","Tim","10/11/2017","Je sais pas quoi écrire de nouveau");
+        CustomNotif notif1 = new CustomNotif(this,"Request","Tim","10/11/2017","Marion accepted your request for tools sharing");
+        CustomNotif notif2 = new CustomNotif(this,"Propose","Tim","10/11/2017","Damien would like to be in part of your carsharing");
 
         layout.addView(notif2);layout.addView(notif1);
 

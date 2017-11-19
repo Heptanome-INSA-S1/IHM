@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorFlatOrange"
+        android:layout_marginRight="20sp"
         android:text="TASK: TODO"/>
     <LinearLayout
         android:layout_below="@+id/state"
@@ -24,15 +25,28 @@
             android:layout_width="wrap_content"
             android:layout_height="90sp">
             <LinearLayout
+                android:layout_marginLeft="10sp"
                 android:id="@+id/layoutInfos"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/title"
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Piano Lesson" />
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/eventImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/card_icone_description"
+                        app:srcCompat="@drawable/ic_build_black_24dp" />
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Piano Lesson" />
+                </LinearLayout>
+
                 <TextView
                     android:id="@+id/dateAndTime"
                     android:layout_width="wrap_content"
@@ -48,6 +62,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/layoutInfos"
                 android:layout_width="wrap_content"
+                android:layout_marginRight="10sp"
                 android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/userMoney"
@@ -78,13 +93,6 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:id="@+id/personImage"
-                android:layout_width="30sp"
-                android:layout_height="30sp"
-                android:layout_marginLeft="11dp"
-                android:layout_marginStart="11dp"
-                app:srcCompat="@drawable/ic_account_circle_black_24dp" />
-            <ImageView
-                android:id="@+id/personImage2"
                 android:layout_width="30sp"
                 android:layout_height="30sp"
                 android:layout_marginLeft="11dp"
