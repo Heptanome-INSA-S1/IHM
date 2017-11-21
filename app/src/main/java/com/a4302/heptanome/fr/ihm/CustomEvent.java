@@ -140,6 +140,10 @@ public class CustomEvent extends LinearLayout {
                 color="yellow";
                 break;
         }
+        if(state.startsWith("REQUEST")){
+            findViewById(R.id.layoutEventCardRight).setVisibility(GONE);
+            findViewById(R.id.layoutEventCardLeft).setVisibility(VISIBLE);
+        }
         this.state.setBackgroundColor(Color.parseColor(color));
     }
     public void setEventType(CustomCard.CardType image, Context context){

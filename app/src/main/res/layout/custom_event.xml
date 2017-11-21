@@ -19,6 +19,26 @@
         android:layout_below="@+id/state"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutEventCardLeft"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+        </LinearLayout>
         <RelativeLayout
             android:id="@+id/layoutEventCard"
             android:layout_weight="2"
@@ -87,7 +107,7 @@
             </LinearLayout>
         </RelativeLayout>
         <LinearLayout
-            android:layout_toRightOf="@+id/layoutEventCard"
+            android:id="@+id/layoutEventCardRight"
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
